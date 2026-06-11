@@ -36,7 +36,10 @@ function renderTable(fish) {
       '<td>' + (f.size ? f.size + ' cm' : '—') + '</td>' +
       '<td>' + escapeHtml(f.location) + '</td>' +
       '<td class="text-muted small">' + f.date + '</td>' +
-      '<td><button class="btn btn-sm btn-outline-danger" onclick="askDelete(' + i + ')" title="Löschen"><i class="fa-solid fa-trash"></i></button></td>' +
+      '<td>' +
+      '<button class="btn btn-sm btn-outline-primary me-1" onclick="openEdit(' + i + ')" title="Bearbeiten"><i class="fa-solid fa-pen"></i></button>' +
+      '<button class="btn btn-sm btn-outline-danger" onclick="askDelete(' + i + ')" title="Löschen"><i class="fa-solid fa-trash"></i></button>' +
+      '</td>' +
       '</tr>';
   }).join('');
 }
