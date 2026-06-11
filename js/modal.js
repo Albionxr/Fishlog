@@ -9,6 +9,31 @@ function openAdd() {
   clearModalFields();
 }
 
+function openEdit(index) {
+  const fish = loadFish();
+  const entry = fish[index];
+  editIndex = index;
+
+  document.getElementById('fishModalTitle').innerHTML = '<i class="fa-solid fa-pen me-2"></i>Fang bearbeiten';
+  document.getElementById('fishSaveBtn').innerHTML = '<i class="fa-solid fa-floppy-disk me-1"></i> Änderungen speichern';
+
+  document.getElementById('fishName').value = entry.name;
+  document.getElementById('fishWeight').value = entry.weight;
+  document.getElementById('fishSize').value = entry.size;
+  document.getElementById('fishLocation').value = entry.location;
+
+  currentPhoto = entry.photo || null;
+  document.getElementById('photoPreview').innerHTML = entry.photo
+    ? '<img src="' + entry.photo + '" style="width:100%;height:100%;object-fit:cover">'
+    : '<i class="fa-regular fa-image"></i>';
+
+  ['fishName', 'fishWeight', 'fishSize', 'fishLocation'].forEach(id =>
+    document.getElementById(id).classList.remove('is-invalid')
+  );
+
+  new bootstrap.Modal(document.getElementById('fishModal')).show();
+}
+
 function saveFish() {
   let valid = true;
   ['fishName', 'fishWeight', 'fishSize', 'fishLocation'].forEach(id => {
