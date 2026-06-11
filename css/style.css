@@ -67,3 +67,50 @@ footer {
 footer strong {
   color: rgba(255,255,255,0.9);
 }
+
+.stat-box {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.stat-box .val {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a2f;
+  line-height: 1;
+}
+
+.stat-box .lbl {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 0.2rem;
+}
+
+.table th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c757d;
+  background: #f8f9fa;
+}
+
+.fish-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.fish-ph {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
