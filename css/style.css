@@ -20,3 +20,38 @@ body {
 .nav-link:hover {
   color: #fff !important;
 }
+
+.hero {
+  background: #1e3a2f;
+  color: white;
+  padding: 3.5rem 0 3rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background: #e8611a;
+  border-color: #e8611a;
+}
+
+.btn-primary:hover {
+  background: #cf5516;
+  border-color: #cf5516;
+}
+
+.icon-main {
+  color: #1e3a2f;
+}
+
+section {
+  padding: 2rem 0;
+}
