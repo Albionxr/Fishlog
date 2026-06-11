@@ -1,0 +1,298 @@
+body {
+  background: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background: #1e3a2f !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.hero {
+  background: #1e3a2f;
+  color: white;
+  padding: 3.5rem 0 3rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background: #e8611a;
+  border-color: #e8611a;
+}
+
+.btn-primary:hover {
+  background: #cf5516;
+  border-color: #cf5516;
+}
+
+.icon-main {
+  color: #1e3a2f;
+}
+
+.ach-header {
+  letter-spacing: 0.08em;
+  color: #e8611a !important;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.stat-box .val {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a2f;
+  line-height: 1;
+}
+
+.stat-box .lbl {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-top: 0.2rem;
+}
+
+.table th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c757d;
+  background: #f8f9fa;
+}
+
+.fish-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.fish-ph {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  background: #e8611a;
+}
+
+.lvl-badge {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e8611a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lvl-badge .lbl {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+.lvl-badge .num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.xp-total {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a2f;
+}
+
+.ach {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+  font-size: 0.88rem;
+}
+
+.ach.done {
+  border-color: #ffc107;
+  background: #fffdf0;
+}
+
+.ach.locked {
+  opacity: 0.4;
+}
+
+.ach i {
+  width: 22px;
+  text-align: center;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.ach.done i {
+  color: #e8611a;
+}
+
+.ach-name {
+  font-weight: 600;
+}
+
+.ach-desc {
+  font-size: 0.78rem;
+  color: #6c757d;
+}
+
+.inv-item {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.inv-item:hover {
+  background: #f0f0f0;
+}
+
+.inv-item i {
+  font-size: 1.5rem;
+  color: #1e3a2f;
+}
+
+.inv-item .name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-top: 0.3rem;
+}
+
+.inv-item .cnt {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.inv-disabled {
+  opacity: 0.45;
+}
+
+.modal-header {
+  background: #1e3a2f;
+  color: white;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.modal-header-danger {
+  background: #dc3545;
+  color: white;
+}
+
+#photoPreview {
+  width: 100%;
+  height: 130px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  border: 2px dashed #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 2rem;
+  overflow: hidden;
+}
+
+#photoPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toast-zone {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 9999;
+}
+
+.toast-hdr {
+  background: #1e3a2f;
+  color: white;
+}
+
+footer {
+  background: #1e3a2f;
+  color: rgba(255,255,255,0.6);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+}
+
+footer strong {
+  color: rgba(255,255,255,0.9);
+}
+
+.location-card {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.location-card .loc-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.location-card .loc-count {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
