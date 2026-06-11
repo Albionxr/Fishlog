@@ -14,4 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     reader.readAsDataURL(file);
   });
+
+  document.getElementById('confirmDelBtn').addEventListener('click', () => {
+    if (deleteIndex < 0) return;
+    const fish = loadFish();
+    fish.splice(deleteIndex, 1);
+    saveFishData(fish);
+    deleteIndex = -1;
+    renderAll();
+    bootstrap.Modal.getInstance(document.getElementById('delModal')).hide();
+  });
 });

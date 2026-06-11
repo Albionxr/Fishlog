@@ -30,14 +30,24 @@ function saveFish() {
     size: document.getElementById('fishSize').value.trim(),
     location: document.getElementById('fishLocation').value.trim(),
     photo: currentPhoto,
-    date: new Date().toLocaleDateString('de-CH')
+    date: editIndex >= 0 ? fish[editIndex].date : new Date().toLocaleDateString('de-CH')
   };
 
-  fish.unshift(entry);
+  if (editIndex >= 0) {
+    fish[editIndex] = entry;
+  } else {
+    fish.unshift(entry);
+  }
+
   saveFishData(fish);
   checkAchievements(fish);
   renderAll();
   bootstrap.Modal.getInstance(document.getElementById('fishModal')).hide();
+}
+
+function askDelete(index) {
+  deleteIndex = index;
+  new bootstrap.Modal(document.getElementById('delModal')).show();
 }
 
 function clearModalFields() {
